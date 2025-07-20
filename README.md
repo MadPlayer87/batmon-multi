@@ -1,37 +1,33 @@
-# Batmon Multi-Instanz Add-on für Home Assistant
+# Batmon Multi-Instanz Add-on
 
-Dieses Repository enthält **10 unabhängige Instanzen** des Home Assistant Add-ons **Batmon**, jeweils zur parallelen Überwachung verschiedener **BMS-Geräte** per Bluetooth oder CAN.
+Dieses Repository enthält **10 getrennte Instanzen** des Home Assistant Add-ons **Batmon**, jeweils zur parallelen Überwachung verschiedener BMS-Geräte per Bluetooth oder CAN.
 
-Das Projekt basiert auf [fl4p/batmon-ha](https://github.com/fl4p/batmon-ha) und wurde von [@MadPlayer87](https://github.com/MadPlayer87) so erweitert, dass mehrere Instanzen **gleichzeitig** betrieben werden können – ideal für komplexe Installationen mit mehreren Batteriemodulen.
+## Add-on Instanzen
 
----
+| Instanz | Slug      | WebUI Port | Beschreibung                     |
+|---------|-----------|------------|----------------------------------|
+| 1       | `batmon1` | `8080`     | BMS Monitoring Instanz 1
+| 2       | `batmon2` | `8081`     | BMS Monitoring Instanz 2
+| 3       | `batmon3` | `8082`     | BMS Monitoring Instanz 3
+| 4       | `batmon4` | `8083`     | BMS Monitoring Instanz 4
+| 5       | `batmon5` | `8084`     | BMS Monitoring Instanz 5
+| 6       | `batmon6` | `8085`     | BMS Monitoring Instanz 6
+| 7       | `batmon7` | `8086`     | BMS Monitoring Instanz 7
+| 8       | `batmon8` | `8087`     | BMS Monitoring Instanz 8
+| 9       | `batmon9` | `8088`     | BMS Monitoring Instanz 9
+| 10       | `batmon10` | `8089`     | BMS Monitoring Instanz 10
 
-## 🔢 Add-on Instanzen
+## Verwendung
 
-| Instanz | Slug       | WebUI Port | Beschreibung               |
-|--------:|------------|------------|----------------------------|
-| 1       | `batmon1`  | `8080`     | BMS Monitoring Instanz 1   |
-| 2       | `batmon2`  | `8081`     | BMS Monitoring Instanz 2   |
-| 3       | `batmon3`  | `8082`     | BMS Monitoring Instanz 3   |
-| 4       | `batmon4`  | `8083`     | BMS Monitoring Instanz 4   |
-| 5       | `batmon5`  | `8084`     | BMS Monitoring Instanz 5   |
-| 6       | `batmon6`  | `8085`     | BMS Monitoring Instanz 6   |
-| 7       | `batmon7`  | `8086`     | BMS Monitoring Instanz 7   |
-| 8       | `batmon8`  | `8087`     | BMS Monitoring Instanz 8   |
-| 9       | `batmon9`  | `8088`     | BMS Monitoring Instanz 9   |
-| 10      | `batmon10` | `8089`     | BMS Monitoring Instanz 10  |
+1. Repository in Home Assistant hinzufügen:
+   - Einstellungen → Add-on Store → Drei Punkte (⋮) → Repository hinzufügen
+   - Gib die GitHub-URL dieses Repos ein.
 
----
+2. Installiere eine oder mehrere `batmonX` Instanzen.
 
-## 🧭 Verwendung in Home Assistant
+3. Konfiguriere jede Instanz individuell (BLE-Adresse, MQTT-Ziel, Port etc.).
 
-### 1. Repository hinzufügen
+## Hinweise
 
-In Home Assistant:
-Einstellungen → Add-on Store → ⋮ (oben rechts) → Repository hinzufügen
-
-
-GitHub-URL eingeben:
-
-```text
-https://github.com/MadPlayer87/batmon-multi
+- Jede Instanz nutzt denselben Code, aber unterschiedliche `slug` und Ports.
+- Stelle sicher, dass Geräteadressen oder Interfaces **pro Instanz getrennt** sind.
