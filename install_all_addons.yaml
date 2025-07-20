@@ -1,0 +1,32 @@
+alias: Installiere alle Batmon Add-ons
+sequence:
+- data:
+    addon: local_batmon1
+  service: hassio.addon_install
+- data:
+    addon: local_batmon2
+  service: hassio.addon_install
+- data:
+    addon: local_batmon3
+  service: hassio.addon_install
+- data:
+    addon: local_batmon4
+  service: hassio.addon_install
+- data:
+    addon: local_batmon5
+  service: hassio.addon_install
+- data:
+    addon: local_batmon6
+  service: hassio.addon_install
+- data:
+    addon: local_batmon7
+  service: hassio.addon_install
+- data:
+    addon: local_batmon8
+  service: hassio.addon_install
+- data:
+    addon: local_batmon9
+  service: hassio.addon_install
+- data:
+    addon: local_batmon10
+  service: hassio.addon_install
