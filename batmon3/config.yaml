@@ -2,7 +2,7 @@ name: "Batmon 3"
 description: "Monitor BMS over Bluetooth – Instanz 3"
 url: https://github.com/MadPlayer87/batmon-multi
 version: "1.82"
-slug: "batmon"
+slug: "batmon3"
 init: false
 host_dbus: true
 apparmor: true
