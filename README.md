@@ -1,5 +1,7 @@
 # Batmon Multi-Instanz Add-on
 
+https://github.com/fl4p/batmon-ha
+
 Dieses Repository enthält **10 getrennte Instanzen** des Home Assistant Add-ons **Batmon**, jeweils zur parallelen Überwachung verschiedener BMS-Geräte per Bluetooth oder CAN.
 
 ## Add-on Instanzen
