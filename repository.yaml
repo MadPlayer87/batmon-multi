@@ -1,3 +1,14 @@
 name: Batmon Multi
 url: https://github.com/MadPlayer87/batmon-multi
 maintainer: MadPlayer87
+addons:
+  - batmon1
+  - batmon2
+  - batmon3
+  - batmon4
+  - batmon5
+  - batmon6
+  - batmon7
+  - batmon8
+  - batmon9
+  - batmon10
